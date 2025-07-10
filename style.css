@@ -95,32 +95,17 @@ nav a {
   max-width: 900px;
   margin: 0 auto;
   justify-content: center;
-  padding-left: 30px;   /* Tambahkan ruang kiri */
-  padding-right: 30px;  /* Tambahkan ruang kanan */
 }
 
 .product-card {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 250px;
+  width: 220px;
+  max-width: 250px;
   padding: 15px;
   text-align: center;
   transition: 0.3s ease;
-}
-
-/* Posisi khusus produk ke-4 dan ke-5 di baris kedua */
-.product-card:nth-child(4) {
-  grid-column-start: 1; /* kiri */
-}
-
-.product-card:nth-child(5) {
-  grid-column-start: 3; /* kanan */
-}
-
-.product-card:nth-child(5) {
-  grid-column: 2 / span 1;
-  justify-self: start;
 }
 
 .product-card:hover {
@@ -142,6 +127,13 @@ nav a {
   color: #6e0427b6;
   margin-top: 8px;
   font-size: 16px;
+}
+
+.product-row {
+  display: flex;
+  flex-wrap: wrap;  /* Biar kalau sempit, turun ke bawah */
+  gap: 30px;
+  justify-content: center;
 }
 
 .buy-btn {
@@ -214,4 +206,11 @@ footer {
   background: #9c765f;
   color: white;
   margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .product-row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
