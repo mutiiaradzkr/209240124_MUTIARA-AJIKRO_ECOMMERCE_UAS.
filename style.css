@@ -1,0 +1,215 @@
+/* Font & Umum */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Header */
+.header-bar {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px 60px;
+  margin-bottom: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.brand h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 28px;
+  color: #9c765f;
+}
+
+.brand-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: #9c765f;
+  gap: 12px;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.header-bar h1 {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  color: #9c765f;
+  gap: 12px;
+}
+
+/* Navigasi */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #393939;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-bar {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #9b7a65;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+  background-color: #f1f1f1;
+}
+/* Produk */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+/* Posisi khusus produk ke-4 dan ke-5 di baris kedua */
+.product-card:nth-child(4) {
+  grid-column-start: 1; /* kiri */
+}
+
+.product-card:nth-child(5) {
+  grid-column-start: 3; /* kanan */
+}
+
+.product-card:nth-child(5) {
+  grid-column: 2 / span 1;
+  justify-self: start;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-title {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-price {
+  color: #6e0427b6;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.buy-btn {
+  margin-top: 12px;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #9c765f;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* Kontak */
+.kontak-section {
+  margin-top: 40px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.kontak-row {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.kontak-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  font-size: 16px;
+  color: #9d7a57;
+  line-height: 1.6;
+}
+
+/* Formulir */
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #9c765f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #9c765f;
+  color: white;
+  margin-top: 40px;
+}
