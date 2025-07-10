@@ -90,11 +90,13 @@ nav a {
 /* Produk */
 .product-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 900px;
   margin: 0 auto;
   justify-content: center;
+  padding-left: 30px;   /* Tambahkan ruang kiri */
+  padding-right: 30px;  /* Tambahkan ruang kanan */
 }
 
 .product-card {
