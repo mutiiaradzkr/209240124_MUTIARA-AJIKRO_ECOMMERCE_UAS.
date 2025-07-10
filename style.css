@@ -207,10 +207,3 @@ footer {
   color: white;
   margin-top: 40px;
 }
-
-@media (max-width: 768px) {
-  .product-row {
-    flex-direction: column;
-    align-items: center;
-  }
-}
